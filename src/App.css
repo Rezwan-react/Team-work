@@ -1,0 +1,24 @@
+body {
+  background-color: #f0f0f0;
+}
+/* 7-Color Background Animation */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(184, 128, 128), orange, yellow, rgb(145, 182, 145),  rgb(200, 183, 212), violet);
+  background-size: 1400% 1400%;
+  animation: gradientBackground 20s ease infinite;
+}
+
+/* Animation for the 7 colors */
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  14% { background-position: 14% 50%; }
+  28% { background-position: 28% 50%; }
+  42% { background-position: 42% 50%; }
+  57% { background-position: 57% 50%; }
+  71% { background-position: 71% 50%; }
+  85% { background-position: 85% 50%; }
+  100% { background-position: 100% 50%; }
+}
